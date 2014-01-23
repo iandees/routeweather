@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Route Weather</title>
+        <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+        <link rel='stylesheet' type='text/css' href='css/style.css' />
+        <link rel='stylesheet' type='text/css' href='css/site.css' />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.ie.css" />
+        <![endif]-->
+        <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <div class='container pad1 col12'>
+            <div class='pad1'>
+                <h2>Route Weather</h2>
+                <p>Show the weather along a driving route.</p>
+            </div>
+
+            <div class='col3' id='from-to'>
+                <label for='from'>From:</label>
+                <input type='text' id='from' placeholder='Chicago, IL'/>
+                <label for='to'>To:</label>
+                <input type='text' id='to' placeholder='St. Louis, MO'/>
+            </div>
+
+            <div class='col9' id='map'>
+            </div>
+
+        </div>
+        <script src='js/site.js'></script>
+    </body>
+</html>
